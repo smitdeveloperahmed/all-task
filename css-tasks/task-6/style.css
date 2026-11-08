@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Georgia, serif;
+    padding: 8px;
+}
+p{
+    padding: 3px 0;
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+h2{
+    font-size: 20px;
+    margin: 12px 0 8px 0;
+}
+span{
+    display: block;
+    margin-bottom: 4px;
+}
+
+/* Descendant */
+.descendant p{
+    background: #5ea9dd;
+}
+
+/* Child */
+.child > p{
+    background: #2ecc71;
+}
+
+/* Adjacent */
+.adjacent-sec h2 + p{
+    background: #f1e500;
+}
+.adjacent-sec h2 + p + p{
+    background: #f1e500;
+}
+
+/* General Sibling */
+.general-sec h2 ~ p{
+    background: #f39c12;
+}

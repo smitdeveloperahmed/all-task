@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Wikipedia</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #202122;
+            background: #fff;
+            line-height: 1.6;
+        }
+
+        a {
+            color: #0645ad;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 15px 24px;
+            border-bottom: 1px solid #a7d7f9;
+            position: sticky;
+            top: 0;
+            background: white;
+            z-index: 10;
+        }
+
+        .logo {
+            width: 45px;
+            height: 45px;
+        }
+
+        .brand {
+            font-family: Georgia, serif;
+            font-size: 23px;
+        }
+
+        .brand small {
+            display: block;
+            font-size: 11px;
+            letter-spacing: 2px;
+        }
+
+        .search {
+            margin-left: auto;
+            display: flex;
+            gap: 5px;
+        }
+
+        .search input {
+            padding: 9px;
+            border: 1px solid #a2a9b1;
+            width: 190px;
+        }
+
+        button {
+            padding: 9px 13px;
+            background: #f8f9fa;
+            border: 1px solid #a2a9b1;
+            cursor: pointer;
+        }
+
+        .layout {
+            display: grid;
+            grid-template-columns: 180px minmax(0, 1fr);
+            gap: 30px;
+            max-width: 1250px;
+            margin: auto;
+            padding: 25px;
+        }
+
+        aside {
+            border-right: 1px solid #eaecf0;
+            padding-right: 18px;
+            font-size: 14px;
+        }
+
+        aside h3 {
+            font-size: 15px;
+            border-bottom: 1px solid #eaecf0;
+        }
+
+        aside a {
+            display: block;
+            margin: 9px 0;
+        }
+
+        main {
+            min-width: 0;
+        }
+
+        .page-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #a2a9b1;
+            padding-bottom: 8px;
+            flex-wrap: wrap;
+        }
+
+        .page-top span {
+            color: #54595d;
+            font-size: 13px;
+        }
+
+        .tabs {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin: 15px 0;
+            font-size: 14px;
+        }
+
+        h1 {
+            font-family: Georgia, serif;
+            font-size: 34px;
+            font-weight: normal;
+            border-bottom: 1px solid #a2a9b1;
+            padding-bottom: 8px;
+            margin-bottom: 8px;
+        }
+
+        h2 {
+            font-family: Georgia, serif;
+            font-size: 26px;
+            font-weight: normal;
+            border-bottom: 1px solid #a2a9b1;
+            margin-top: 30px;
+        }
+
+        h3 {
+            font-size: 19px;
+        }
+
+        p {
+            margin: 13px 0;
+        }
+
+        .infobox {
+            float: right;
+            width: 250px;
+            border: 1px solid #a2a9b1;
+            background: #f8f9fa;
+            padding: 12px;
+            margin: 0 0 18px 20px;
+            text-align: center;
+        }
+
+        .infobox img {
+            width: 190px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .infobox h3 {
+            background: #eaecf0;
+            padding: 5px;
+            margin: 0 0 10px;
+        }
+
+        .caption {
+            font-size: 12px;
+        }
+
+        .contents {
+            display: table;
+            min-width: 240px;
+            background: #f8f9fa;
+            border: 1px solid #a2a9b1;
+            padding: 12px 25px;
+            margin: 20px 0;
+        }
+
+        .contents strong {
+            display: block;
+            text-align: center;
+        }
+
+        .contents ol {
+            padding-left: 22px;
+            margin-bottom: 0;
+        }
+
+        .contents li {
+            margin: 5px 0;
+        }
+
+        pre {
+            white-space: pre-wrap;
+            background: #f8f9fa;
+            border: 1px solid #eaecf0;
+            padding: 12px;
+            overflow-wrap: anywhere;
+        }
+
+        footer {
+            border-top: 1px solid #a2a9b1;
+            padding: 25px;
+            text-align: center;
+            font-size: 13px;
+            color: #54595d;
+        }
+
+        @media(max-width: 750px) {
+            .layout {
+                grid-template-columns: 1fr;
+                padding: 15px;
+            }
+
+            aside {
+                border-right: 0;
+                border-bottom: 1px solid #eaecf0;
+                padding-bottom: 12px;
+            }
+
+            aside a {
+                display: inline-block;
+                margin-right: 12px;
+            }
+
+            .brand {
+                font-size: 18px;
+            }
+
+            header {
+                padding: 10px;
+                gap: 10px;
+                flex-wrap: wrap;
+            }
+
+            .search {
+                width: 100%;
+                margin-left: 0;
+            }
+
+            .search input {
+                flex: 1;
+                min-width: 0;
+            }
+
+            .infobox {
+                float: none;
+                margin: 15px auto;
+                width: min(100%, 300px);
+            }
+
+            h1 {
+                font-size: 29px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/6/63/Wikipedia-logo.png"
+            alt="Wikipedia logo">
+
+        <div class="brand">
+            Wikipedia
+            <small>The Free Encyclopedia</small>
+        </div>
+
+        <form class="search" action="https://en.wikipedia.org/w/index.php" method="get">
+            <input type="search" name="search" placeholder="Search Wikipedia..." aria-label="Search Wikipedia">
+            <button type="submit">Search</button>
+        </form>
+    </header>
+
+    <div class="layout">
+
+        <aside>
+            <h3>Main menu</h3>
+            <a href="https://en.wikipedia.org/wiki/Main_Page">Main page</a>
+            <a href="https://en.wikipedia.org/wiki/Portal:Contents">Contents</a>
+            <a href="https://en.wikipedia.org/wiki/Portal:Current_events">Current events</a>
+            <a href="https://en.wikipedia.org/wiki/Special:Random">Random article</a>
+            <a href="https://en.wikipedia.org/wiki/Wikipedia:About">About Wikipedia</a>
+            <a href="https://en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a>
+
+            <h3>Contribute</h3>
+            <a href="https://en.wikipedia.org/wiki/Help:Introduction">Help</a>
+            <a href="https://en.wikipedia.org/wiki/Help:Editing">Learn to edit</a>
+            <a href="https://commons.wikimedia.org/">Wikimedia Commons</a>
+        </aside>
+
+        <main>
+
+            <div class="page-top">
+                
+               
+            </div>
+
+            <div class="tabs">
+                <a href="https://en.wikipedia.org/wiki/HTML">Article</a>
+                <a href="https://en.wikipedia.org/wiki/Talk:HTML">Talk</a>
+            </div>
+<hr>
+            <h1>HTML</h1>
+
+            <p>From Wikipedia, the free encyclopedia</p>
+
+            <div class="infobox">
+                <h3>HTML</h3>
+
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+                    alt="HTML5 logo">
+
+                <p class="caption">The HTML5 logo</p>
+
+                <hr>
+
+                <p><b>File type</b></p>
+                <p>Markup language</p>
+
+                <p><b>Developed by</b></p>
+                <p>WHATWG and W3C</p>
+
+                <p><b>Website</b></p>
+                <p>
+                    <a href="https://html.spec.whatwg.org/">
+                        HTML Living Standard
+                    </a>
+                </p>
+            </div>
+
+            <p>
+                <b>HyperText Markup Language (HTML)</b> is the standard
+                markup language for documents designed to be displayed
+                in a <a href="https://en.wikipedia.org/wiki/Web_browser">web browser</a>.
+                It defines the content and structure of web content.
+                It is often assisted by technologies such as
+                <a href="https://en.wikipedia.org/wiki/CSS">Cascading Style Sheets (CSS)</a>
+                and scripting languages such as
+                <a href="https://en.wikipedia.org/wiki/JavaScript">JavaScript</a>.
+            </p>
+
+            <p>
+                Web browsers receive HTML documents from a web server
+                or from local storage and render the documents into
+                multimedia web pages. HTML describes the structure
+                of a web page semantically and originally included
+                cues for its appearance.
+            </p>
+
+            <p>
+                HTML elements are the building blocks of HTML pages.
+                With HTML constructs, images and other objects such as
+                interactive forms may be embedded into the rendered page.
+                It provides a means to create structured documents by
+                denoting structural semantics for text such as headings,
+                paragraphs, lists, links, quotes, and other items.
+            </p>
+
+            <p>
+                HTML can embed programs written in a scripting language
+                such as <a href="https://en.wikipedia.org/wiki/JavaScript">JavaScript</a>,
+                which affects the behaviour and content of web pages.
+                The inclusion of CSS defines the look and layout of content.
+            </p>
+
+         
+
+                    </a>
+                </li>
+            </ul>
+
+        </main>
+    </div
+</body>
+</html>
