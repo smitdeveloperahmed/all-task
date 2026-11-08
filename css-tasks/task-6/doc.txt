@@ -1,0 +1,7 @@
+1. Descendant Combinator (Space): Is combinator mein parent element ke andar jitne bhi matching child elements hote hain, chahe direct hon ya nested, sab select ho jate hain. Example: div p ka matlab hai div ke andar tamam paragraphs select karna.
+
+2. Child Combinator (>): Is combinator mein sirf direct child elements select hote hain. Nested elements select nahi hote. Example: div > p ka matlab hai div ke direct paragraph children ko select karna.
+
+3. Adjacent Sibling Combinator (+): Is combinator mein kisi element ke bilkul baad aane wala pehla sibling element select hota hai. Example: h2 + p ka matlab hai h2 ke immediately baad aane wale paragraph ko select karna.
+
+4. General Sibling Combinator (~): Is combinator mein kisi element ke baad aane wale tamam matching sibling elements select hote hain. Example: h2 ~ p ka matlab hai h2 ke baad aane wale tamam paragraphs ko select karna, jo same parent ke andar hon.

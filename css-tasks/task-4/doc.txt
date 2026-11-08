@@ -1,0 +1,37 @@
+CSS Box Model ke 4 main parts hain:
+
+1. Content: Content box ke andar actual text, image ya data hota hai. Iski width aur height content ka size define karti hain. Example: width: 200px; height: 100px;
+
+2. Padding: Padding content aur border ke darmiyan space hoti hai. Ye content ke around andar ki taraf space create karti hai. Example: padding: 20px;
+
+3. Border: Border content aur padding ke bahar ek boundary ya line hoti hai jo box ko surround karti hai. Example: border: 3px solid black;
+
+4. Margin: Margin border ke bahar space hoti hai. Ye ek element aur doosre element ke darmiyan distance create karti hai. Example: margin: 30px;
+Simple CSS Example
+.box {
+  width: 200px;
+  height: 100px;
+  padding: 20px;
+  border: 3px solid black;
+  margin: 30px;
+}
+
+
+Box Model ka total size
+Default CSS box model (content-box) mein:
+- Content width = 200px
+- Left + Right Padding = 40px
+- Left + Right Border = 6px
+- Left + Right Margin = 60px
+Total width:
+
+200 + 40 + 6 + 60 = 306px
+
+Total height:
+
+100 + 40 + 6 + 60 = 206px
+Important baat yaad rakhein
+- Content = Actual data
+- Padding = Content ke andar space
+- Border = Box ki boundary
+- Margin = Box ke bahar space
