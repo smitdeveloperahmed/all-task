@@ -1,132 +1,119 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
+body{
+margin: 0;
+background-color: #f2f2f2;
+font-family: arial;
 }
-body {
-  background: white;
-  padding: 20px 40px;
+.header{
+background-color: #5f5f5f;
+color: white;
+text-align: center;
+padding-top: 15px;
+padding-bottom: 15px;
 }
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 30px;
+.header a{
+color: white;
+text-decoration: none;
+margin-left: 10px;
+font-size: 14px;
 }
-.logo {
-  font-weight: bold;
-  font-size: 14px;
-  letter-spacing: 1px;
+.main{
+display: flex;
+padding: 10px;
 }
-.links {
-  display: flex;
-  gap: 20px;
-  font-size: 11px;
+.sidebar{
+background-color: #6e6e6e;
+color: white;
+width: 180px;
+height: 520px;
+padding: 10px;
+border-radius: 5px;
 }
-.links a {
-  color: #555;
-  text-decoration: none;
+.sidebar a{
+color: white;
+display: block;
+margin-top: 10px;
+font-size: 13px;
+text-decoration: none;
 }
-.about {
-  text-align: center;
-  max-width: 750px;
-  margin: auto;
+.content{
+background-color: white;
+width: 100%;
+margin-left: 10px;
+padding: 15px;
+position: relative;
+overflow: hidden;
 }
-.about h2 {
-  font-size: 18px;
-  margin-bottom: 15px;
+.sticky{
+background-color: #e2e2e2;
+text-align: center;
+padding: 10px;
+position: sticky;
+top: 0;
+z-index: 10;
 }
-.about p {
-  font-size: 13px;
-  line-height: 1.6;
-  color: #333;
+.sticky p{
+font-size: 12px;
 }
-.yellow {
-  background: #ffeb3b;
-  padding: 0 3px;
+
+/* BOX 1 - AB SAHI HAI */
+.box1{
+background-color: #ff7b5e;
+color: white;
+width: 90px;
+height: 90px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+position: absolute;
+top: 120px;
+right: 20px;
+z-index: 20;
+font-size: 14px;
 }
-.title {
-  text-align: center;
-  font-size: 13px;
-  margin: 40px 0 30px 0;
+
+.box2{
+background-color: #d6eef5;
+width: 230px;
+padding: 15px;
+position: absolute;
+top: 200px;
+left: 15px;
+font-size: 13px;
+z-index: 5;
 }
-.cards {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  text-align: center;
+.images{
+margin-top: 300px;
 }
-.card {
-  flex: 1;
-  max-width: 280px;
+.images div{
+background-color: #e6e6e6;
+width: 31%;
+height: 140px;
+display: inline-block;
+margin: 5px;
+text-align: center;
+padding-top: 60px;
+color: #aaa;
+font-size: 18px;
 }
-.card img {
-  width: 90px;
-  height: 90px;
-  object-fit: contain;
+.btns{
+position: fixed;
+right: 12px;
+top: 320px;
 }
-.card h4 {
-  margin: 10px 0;
-  font-size: 16px;
+.btns p{
+background-color: #6e6e6e;
+color: white;
+width: 32px;
+height: 32px;
+border-radius: 50%;
+text-align: center;
+padding-top: 7px;
 }
-.card p {
-  font-size: 10px;
-  color: #777;
-}
-button {
-  background: #333;
-  color: white;
-  border: none;
-  padding: 7px 15px;
-  border-radius: 20px;
-  font-size: 11px;
-  margin-top: 10px;
-  cursor: pointer;
-}
-.github {
-  text-align: center;
-  margin-top: 70px;
-}
-.gh-icon {
-  font-size: 30px;
-}
-.github h3 {
-  font-size: 16px;
-  margin: 10px 0;
-}
-.github p {
-  font-size: 12px;
-  color: #555;
-  max-width: 500px;
-  margin: auto;
-}
-.footer {
-  text-align: center;
-  font-size: 10px;
-  color: #888;
-  margin-top: 60px;
-  padding-top: 15px;
-  border-top: 1px solid #eee;
-}
-.back {
-  font-size: 11px;
-  color: #333;
-  text-decoration: none;
-}
-.tasks {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  max-width: 800px;
-  margin: auto;
-}
-.task {
-  border: 1px solid #eee;
-  padding: 20px;
-  border-radius: 8px;
-}
-.task p {
-  font-size: 13px;
-  font-weight: bold;
+.footer{
+background-color: #5f5f5f;
+color: white;
+text-align: center;
+padding: 12px;
+font-size: 12px;
 }
